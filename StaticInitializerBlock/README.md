@@ -1,18 +1,34 @@
-## Getting Started
+# static Ititializer block
+Static initialization blocks are executed when the class is loaded, and you can initialize static variables in those blocks.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+If B <= 0 or H <= 0 the output should be "java.lang.Exception: Breadth and height must be positive" without quotes.
 
-The workspace contains two folders by default, where:
+## Input Format
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+There are two lines of input:
+The first line contains - the breadth of the parallelogram.<br>
+The next line contains:the height of the parallelogram.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Output Format
 
-## Dependency Management
+If both values are greater than zero, then the main method must output the area of the parallelogram. Otherwise, print "java.lang.Exception: Breadth and height must be positive" without quotes.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Sample input 1
+
+1<br>
+3
+
+# Sample output 1
+
+3
+
+## Sample input 2
+
+-1<br>
+2
+
+## Sample output 2
+
+java.lang.Exception: Breadth and height must be positive
