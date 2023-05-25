@@ -30,10 +30,10 @@ A single double-precision number denoting payment.
 ## Output format
 
 
-On the first line, print US: u where u is payment  formatted for US currency.
-On the second line, print India: i where i is payment formatted for Indian currency.
-On the third line, print China: c where c is payment formatted for Chinese currency.
-On the fourth line, print France: f, where f is payment formatted for French currency.
+On the first line, print US: u where u is payment  formatted for US currency. <br>
+On the second line, print India: i where i is payment formatted for Indian currency. <br>
+On the third line, print China: c where c is payment formatted for Chinese currency. <br>
+On the fourth line, print France: f, where f is payment formatted for French currency. <br>
 
 ## Sample Input
 
