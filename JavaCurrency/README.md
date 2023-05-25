@@ -1,18 +1,50 @@
-## Getting Started
+# Java Currency Formatting challenge
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Instructions
 
-## Folder Structure
+Given a double-precision number, payment, denoting an amount of money, use the NumberFormat class' getCurrencyInstance method to convert into the US, Indian, Chinese, and French currency formats. Then print the formatted values as follows: 
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+US: formattedPayment <br>
+India: formattedPayment <br>
+China: formattedPayment <br>
+France: formattedPayment <br>
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+where is formattedPayment is formatted according to the appropriate Locale's currency. <br>
 
-## Dependency Management
+Note: India does not have a built-in Locale, so you must construct one where the language is en (i.e., English). <br>
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+## Input format 
+
+
+A single double-precision number denoting payment.
+
+
+# Constraints
+
+
+0 <= payment <= pow(10, 9) <br>
+
+## Output format
+
+
+On the first line, print US: u where u is payment  formatted for US currency.
+On the second line, print India: i where i is payment formatted for Indian currency.
+On the third line, print China: c where c is payment formatted for Chinese currency.
+On the fourth line, print France: f, where f is payment formatted for French currency.
+
+## Sample Input
+
+
+12324.134
+
+## Sample output
+
+US: $12,324.13 <br>
+India: Rs.12,324.13 <br>
+China: ￥12,324.13 <br>
+France: 12 324,13  <br>
+
+
