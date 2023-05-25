@@ -1,18 +1,22 @@
-## Getting Started
+# Date and time  Getting challenge
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+This challenge I decided to use the LocalDate class found in the time class because it's easier to work with compared to the calender class. Plus the time class is in java 11 which is what I'm currently learning
 
-The workspace contains two folders by default, where:
+## Instructions 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+You are given a date. You just need to write the method,getDay() , which returns the day on that date. 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Example 
 
-## Dependency Management
+Month= 8 <br>
+day=14 <br>
+year=2017 <br>
+<br>
+The method should return MONDAY as the day on that date. 
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Returns
+
+string: the day of the week in capital letters 
+
