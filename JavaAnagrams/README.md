@@ -38,6 +38,8 @@ Anagrams
 
 Explanation 0
 
+We count the number of times a character appears in each string(frequency) and if both strings 
+have the same frequency of characters then they are considered anagrams
 
 Character |	Frequency: anagram |	Frequency: margana <br>
 A or a |	3 | 3 <br>
@@ -46,7 +48,9 @@ N or n 	| 1 |	1 <br>
 M or m 	| 1 |	1 <br>
 R or r 	| 1 |1 <br>
 
-The two strings contain all the same letters in the same frequencies, so we print "Anagrams".
+The two strings contain all the same letters in the same frequencies, so we print "Anagrams". <br>
+the string=anagram has 3 a's and the string=margana also has 3 a's <br>
+the string=anagram has 1 G's and the string=margana also has 1 G's
 
 ## Sample Input 1
 
