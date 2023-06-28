@@ -90,3 +90,30 @@ L or l 	2 	2 <br>
 O or o 	1 	1 <br>
 
 The two strings contain all the same letters in the same frequencies, so we print "Anagrams".
+
+## My own algorithm 1
+
+1. convert each string into an array of characters <br>
+2. declare two count variables(count1 and count2) and set them  to zero 
+3. Loop through each array <br>
+3. While iterating, get the ASCII character value(e.g. a=65) of each element in the array <br>
+4. add the value to the count variable <br>
+5. after iterating throuhh each array compare the count from both arrays <br>
+6. if the values are equal then the strings are anagrams <br>
+
+## problems with algorithm 1
+
+The algorithm returns the correct results for most of the inpu. But for some inputs, such as: <br>
+a= bbcc and b = dabc
+a = xyzw=(482) and b = xyxy=482 are not anagrams but the algorithm says they are <br>
+a = Abul=(388) and b = bulA=(356) are anagrams but the algorithm says they are not <br>
+the algorithm produces incorrect results.
+
+## My own algorithm 2
+
+1. convert each string into an array <br>
+2. Sort each array in ascending order <br>
+3. Convert the array back into a string <br>
+4. Use compareToIgnorecase() method, if <br>
+    4.1. it returns a 0 then the two strings are anagrams <br>
+    4.2. else they are not
