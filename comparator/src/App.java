@@ -13,13 +13,10 @@ class Player{
 }
 
 class Checker implements Comparator<Player> {
-
-    // sort in order of decreasing score; if or more players have the same score,
-    //  sort those players alphabetically by nam
     @Override
     public int compare(Player arg0, Player arg1) {
         if(arg0.score == arg1.score) {
-            return Integer.compare(arg0.name.length(), arg1.name.length());
+            return arg0.name.compareTo(arg1.name);
         }
         else {
             return arg1.score - arg0.score;
@@ -42,6 +39,7 @@ public class App {
             player[i] = new Player(scan.next(), scan.nextInt());
         }
         scan.close();
+        System.out.println("\n Here's the list of sorted players: \n");
      
         Arrays.sort(player, checker);
         for(int i = 0; i < player.length; i++){

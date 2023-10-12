@@ -1,18 +1,22 @@
-## Getting Started
+# Intoduction 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Comparators are used to compare two objects. In this challenge, you'll create a comparator and use it to sort an array.
 
-## Folder Structure
+Given an array of n Player objects, write a comparator that sorts them in order of decreasing score; if 2 or more players have the same score, sort those players alphabetically by name. To do this, you must create a Checker class that implements the Comparator interface, then write an int compare(Player a, Player b) method implementing the Comparator.compare(T o1, T o2) method.
 
-The workspace contains two folders by default, where:
+## Sample Input
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+5 <br>
+amy 100 <br>
+david 100 <br>
+heraldo 50 <br>
+aakansha 75 <br>
+aleksa 150 <br>
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Sample Output
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+aleksa 150 <br>
+amy 100 ,br
+david 100 <br>
+aakansha 75 <br>
+heraldo 50 <br>
